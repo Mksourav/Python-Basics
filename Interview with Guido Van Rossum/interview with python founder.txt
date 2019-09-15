@@ -1,0 +1,104 @@
+I worked at this place, CWI, and
+for my then current project, which was the Amoeba operating system,
+which I was working under Sape Mullender. One of our projects was to
+write application-level utilities for
+this new Amoeba operating system. And so, there was an operating system kernel and it was very good at
+talking to the network. And it was very good at managing processes.
+But there wasn't much user-level software. There was barely a shell,
+I think there was a ported, very old Unix shell something like the original
+Unix version six shell, but because the file system model
+on Amoeba was so very different we couldn't take an existing
+suite of Unix utilities. And so we wanted it to be self-hosting. And in order to that we realized we need
+a large amount of user-level sort of applications, utilities, tools,
+whatever you call it, from an editor to a mail program to
+a login utility and a backup tool. And one of the things I realized,
+as we had a small team of people sort of working on those things, that it was very
+slow going writing all that stuff in C, and it wasn't particularly interesting or
+sort of novel or difficult and often we also didn't
+really care how fast the code ran. All the reasons why you would
+write a piece of software in C didn't really apply. The only reason left was that C
+was the only language that for which we had a compiler. There was this ABC language that I had
+in the back of my mind that would be a much better language to write a whole
+bunch of utility application tools for Amoeba, except that ABC was so
+high and abstract that it really. It wasn't a good language
+to talk to servers and file systems and
+processes and it's sort of, the whole operating system thing
+was abstracted away from ABC. It was almost something
+like it, I don't know. In an alternate universe ABC could have
+become the language of spreadsheets. It was very good for
+talking about a user's data. And doing all sorts of clever stuff with
+that data. And it did that using very, sort of general all-purpose
+data structures like lists and dictionaries and
+of course it had very nice code structuring devices like a small
+number of simple statements that could be combined in any way you
+wanted to create other constructs. The usual function and
+procedure abstractions. It was not at all an object oriented
+language although the implementation had some objects sort of shining through. Anyway ABC as it existed
+still wasn't usable but I somehow, since I had worked on the ABC
+project, I knew exactly how it was built. And I had this idea in my head that,
+given how much time we had available for our project, I
+could actually build a whole new language, design and implement it from scratch, given what I learned about both the design
+and the implementation of ABC, and start using it to implement
+our suite of tools and still be ahead of the game compared to
+a situation where we would just have sort of clunked on writing the things
+we wanted to write in C. For three months, I did my day job and at night and whenever I got
+a chance I kept working on Python. I believe that within three months I was
+to the point where I could tell people, look here. This is what I built. And it had an interactive
+interpreter loop. So the first demos were all let's assign an expression to
+a variable and print it back. And let's define a small function and
+call it. And let's put some things in an array and
+iterate over the array. And all those things worked. And somehow, and I don't exactly know sort
+of how fast this happened, but certainly my two office mates were almost instantly taken with it and
+started helping out. And they and
+a few others within the institute were very excited about
+this thing that I'd built. And started sort of, of course we didn't instantly
+use it on Amoeba because it wasn't mature enough to actually write
+the Amoeba utilities that we wanted. But it was already instantly useful
+enough to run on our Unix system. People within CWI, even outside my
+own department, started using it. And recognizing that it was fun and
+productive to use. And they used it for small scripts and people started contributing
+things like bug fixes. Somehow things then went very
+quickly during that first year. Because I think by the end of 1990,
+so a year after I started, we developed a plan to do an open
+source release of this language. And this was before the word open
+source had even been coined. So we didn't call it that. But we did have some models. We had like X11,
+the window system at the time, had a distribution that was one
+of the sort of open source examples. With two colleagues I worked
+sort of building a distribution and we, actually it turned out
+to be very simple to get management to sign off on this release. That was an an incredibly lucky stroke. I just sort of, I asked my manager's
+manager what should we do about this and he said oh, you gotta talk to this and this person in the administrative
+branch of the institute. And I talked to this woman and she was like in charge of all
+legal affairs I believe and I said well I have written this source
+code and I would like to release that and I have sort of made up a license that's
+like identical to the MIT license, I could say MIT releases software under
+exactly this license and we just put like the formal name of our institute in there
+instead of the regents of the institute. She asked me some questions like did
+someone pay for this to be developed? And my answer was no,
+I started it all on my own time and it was for this research project and
+that sort of. My manager's fine with it. And so she said sure, go ahead. And we did it and that's so in February '91,
+we did the first Python release. It felt like, at the time
+like an incredible milestone. We needed to post it to Usenet. There was this Usenet newsgroup that would receive source code for
+random free projects. I got immediately started getting
+useful positive feedback from, well initially just from random people
+who picked up free software from Usenet. And we quickly sort of got into a routine of doing new Python releases. And every time, I mean there were the
+obvious improvements to the language and the library and bug fixes, a very important category of things that
+were often contributed were ports or ported fixes where people had different
+architectures, different compilers. The Unix world was much less
+homogenous at the time. There were lots of small Unix vendors
+that had their own compilers, or their own hardware. All sorts of things. So the big things that happened during
+say the first half of the '90s was a community of Python users and
+developers self-organized. Then came the invitation to come to
+the United States for a couple of months from NIST, the National Institute for
+Standards and Technology. So I spent two months there. We organized the first Python workshop,
+which was hosted by NIST. Through that Python workshop I met
+people who offered me a job and from '95, I mean I went back to the Netherlands for
+a few months and then from '95 to 2000 I worked in US in northern
+Virginia at CNRI. And so there we worked through a lot
+of growth of the community and the infrastructure. We created
+the Python website, I got in touch with a bunch of people who are still active in
+the Python community like Barry Warsaw. I think when I started there Python
+1.3 was about to be released. And then while I was
+there we released several subsequent versions leading
+up to 1.5.2 which for some reason 1.5.0 was nothing but
+1.5.2 remained the sort of the standard, the gold standard of Python
+for a very long time afterwards. [MUSIC]
